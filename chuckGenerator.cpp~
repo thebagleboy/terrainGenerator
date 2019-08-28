@@ -1,0 +1,19 @@
+#include <iostream>
+#include <cstdlib>
+
+const int _width = 32;
+const int _height = 32;
+
+const int _maxHeight = 10;
+
+int main(){
+	for(int w = 0; w < _width; w++)
+	{
+		for( int h = 0; h < _height; h++)
+		{
+			std::cout << rand() % _maxHeight;
+		}
+		std::cout << "\n";
+	}
+	return 0;
+}
